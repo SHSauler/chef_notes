@@ -66,16 +66,33 @@ end
 
 ### Hashes
 
-Setting like Python dicts, acessing with preceding `:`
+#### Defining
+
+Variant 1
 
 ```
-hash_name = {
-  entry1: 'string',
-  entry2: 'string2'
-}
-
-Chef::Log.info hash_name[:entry1]
+> testo = { :something => 1, :otherthing => 2, :thirdthing => 3}
+=> {:something=>1, :otherthing=>2, :thirdthing=>3}
 ```
 
+Variant 2
 
+```
+> testo = { something: 1, otherthing: 2, thirdthing: 3}
+=> {:something=>1, :otherthing=>2, :thirdthing=>3}
+```
 
+#### Accessing
+
+```
+> testo[:something]
+=> 1
+```
+
+```
+> testo.each do |key,value| puts "#{key} : #{value}" end
+something : 1
+otherthing : 2
+thirdthing : 3
+=> {:something=>1, :otherthing=>2, :thirdthing=>3}
+```
