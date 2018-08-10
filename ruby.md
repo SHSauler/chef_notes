@@ -1,6 +1,6 @@
 ## Notes on ruby behavior
 
-Ruby perculiarities.
+Ruby peculiarities.
 
 
 ### Symbols
