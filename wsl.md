@@ -8,4 +8,5 @@ Append to `.bashrc`
 alias cdrive='cd /mnt/c'
 export PATH="$HOME/.local/bin:/mnt/c/Program Files/Oracle/VirtualBox:$PATH"
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+export EDITOR=$(which vi)
 ```
