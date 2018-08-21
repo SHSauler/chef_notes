@@ -37,3 +37,15 @@ suites:
         - test/smoke/default
     attributes:
     ```
+
+
+### Testing tools
+
+```
+# foodcritic .
+Checking 5 files
+[...]
+# cookstyle . 
+Inspecting 8 files
+[...]
+```
