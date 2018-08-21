@@ -57,3 +57,9 @@ Ruby static code analyzer
 ```
 cookstyle . 
 ```
+
+To autocorrect violations
+
+```
+cookstyle -a .
+```
