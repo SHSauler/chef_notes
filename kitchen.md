@@ -63,3 +63,9 @@ To autocorrect violations
 ```
 cookstyle -a .
 ```
+
+## Testing specs
+
+```
+chef exec rspec .
+```
