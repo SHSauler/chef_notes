@@ -1,3 +1,5 @@
+## Kitchen
+
 ### Kitchen lifecycle
 
 ```
@@ -36,16 +38,22 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
-    ```
+```
 
+## Testing tools
 
-### Testing tools
+### Foodcritic
+
+Metadata linting tool
 
 ```
-# foodcritic .
-Checking 5 files
-[...]
-# cookstyle . 
-Inspecting 8 files
-[...]
+foodcritic .
+```
+
+### Cookstyle
+
+Ruby static code analyzer
+
+```
+cookstyle . 
 ```
