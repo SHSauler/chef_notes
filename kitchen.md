@@ -22,8 +22,6 @@ kitchen verify
 kitchen destroy
 ```
 
-Afterwards `kitchen test` can determine whether inspec tests passed.
-
 ### Kitchen with vagrant
 
 ```
