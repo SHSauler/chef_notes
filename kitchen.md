@@ -69,3 +69,18 @@ cookstyle -a .
 ```
 chef exec rspec .
 ```
+
+## Verification of inspec
+
+In the kitchen config
+
+```
+verifier:
+  name: inspec
+```
+
+Running the verification
+
+```
+kitchen verify
+```
