@@ -10,6 +10,18 @@ kitchen exec -c 'command'
 kitchen destroy
 ```
 
+### Kitchen test
+
+`kitchen test` command performs a complete Test Kitchen run, namely:
+
+```
+kitchen destroy
+kitchen create
+kitchen converge
+kitchen verify
+kitchen destroy
+```
+
 ### Kitchen with vagrant
 
 ```
