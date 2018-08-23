@@ -23,3 +23,15 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
 [...]
 Adding certificate for DigiCert_SHA2_Secure_Server_CA in /home/user/.chef/trusted_certs/DigiCert_SHA2_Secure_Server_CA.crt
 ```
+
+### Creating org on chef server
+
+```
+chef-server-ctl org-create cheftest "Cheftest Inc." -f /tmp/cheftest.key
+```
+
+### Creating user on chef server
+
+```
+chef-server-ctl user-create testot Testo Testenberger testot@example.local P@SSW0RD! -f testot.key
+```
