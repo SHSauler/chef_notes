@@ -42,3 +42,18 @@ chef-server-ctl user-create testot Testo Testenberger testot@example.local P@SSW
 ```
 sudo chef-server-ctl org-user-add cheftest testot
 ```
+
+### Upload cookbook
+
+```
+> $ knife cookbook upload learn_chef_apache2
+
+Uploading learn_chef_apache2 [0.1.0]
+Uploaded 1 cookbook.
+```
+
+Depends on `cookbook_path` set in `knife.rb`
+
+```
+cookbook_path            ["#{current_dir}/../cookbooks"]
+```
