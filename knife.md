@@ -35,3 +35,10 @@ chef-server-ctl org-create cheftest "Cheftest Inc." -f /tmp/cheftest.key
 ```
 chef-server-ctl user-create testot Testo Testenberger testot@example.local P@SSW0RD! -f testot.key
 ```
+
+
+### Associate user with org
+
+```
+sudo chef-server-ctl org-user-add cheftest testot
+```
