@@ -66,4 +66,9 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
 learn_chef_apache2   0.1.0
 ```
 
+### Bootstrap vagrant node
+
+```
+knife bootstrap 127.0.0.1 --ssh-port 2222 --ssh-user vagrant --node-ssl-verify-mode none --sudo --identity-file /home/user/node/.vagrant/machines/default/virtualbox/private_key --node-name node1-ubuntu --run-list 'recipe[learn_chef_apache2]'
+```
 
