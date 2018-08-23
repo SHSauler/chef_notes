@@ -57,3 +57,13 @@ Depends on `cookbook_path` set in `knife.rb`
 ```
 cookbook_path            ["#{current_dir}/../cookbooks"]
 ```
+
+### List cookbooks
+
+```
+> $ knife cookbook list
+
+learn_chef_apache2   0.1.0
+```
+
+
